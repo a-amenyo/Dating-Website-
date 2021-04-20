@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Partner Match</title>
+</head>
+<body>
+    
+    <div  class="header" id="header"><h1>Partner Match</h1></div>
+    <div class="cover-photo">
+
+    </div>
+   
+     
+    <div id="main">
+        <div class="row">
+            <div class="row">
+                <label>Gender</label>
+                <select id="gender">
+                    <option value="A">All</option>
+                    <option value="F">Female</option>
+                    <option value="M">Male</option>                        
+                </select>
+            </div>
+            <div class="row">
+                <label>Hobbies</label>
+                <input type="text" id="hobby" />
+            </div>
+                        <!-- Age Range -->
+                        <div class="row">
+                            <label>Filter</label>
+                            <input type="number" id="min-age">
+                            <input type="number" id="max-age">
+                     </div>
+            <div class="row">
+                <button id="searchBtn">Search</button>
+            </div>
+ 
+        </div>
+        <div id="results">
+            <div class="person-row">
+                <img src="images/avatar1.png" />
+                <div class="person-info">
+                    <div>Catalina</div>
+                    <div>sports, pets, party</div>
+                </div> 
+                <button>Add as friend</button>
+            </div>
+            <div class="person-row">
+                <img src="images/avatar1.png" />
+                <div class="person-info">
+                    <div>Catalina</div>
+                    <div>sports, pets, party</div>
+                </div> 
+                <button>Add as friend</button>
+            </div>
+            <div class="person-row">
+                <img src="images/avatar1.png" />
+                <div class="person-info">
+                    <div>Catalina</div>
+                    <div>sports, pets, party</div>
+                </div> 
+                <button>Add as friend</button>
+            </div>
+        </div>
+    </div>
+    <hr class="hr">
+    <!-- Testimonies -->
+    <div class="cover-wrapper">
+        <div class="text">
+           <p> "It was like we had known each other forever. 
+            We dated for 9 months, got engaged, 
+            and 10 months later we’re married!
+            And are now expecting our first child!" <br>
+    
+            -Tony & Megan</p>
+        </div>
+        <div class="cover-image">
+           
+        </div>
+       
+       </div>
+    <!-- Socials  -->
+    <div class="social-media">
+     
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+       
+      </div>
+
+
+      <footer>
+        <p>© 2021 Partner Match. All rights reserved.</p>
+      </footer>
+
+
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
+
+
+
+
+<!-- 
+var users = [
+    {
+        name: 'Lucy',
+        gender: 'F',
+        hobby: 'pets',
+        age: '20',
+        avatar: 'avatar1.png'        
+    },
+    {
+        name: 'Betty',
+        gender: 'F',
+        hobby: 'pets',
+        age: '25',
+        avatar: 'avatar2.png'
+    },
+    {
+        name: 'Ronald',
+        gender: 'M',
+        hobby: 'music',
+        age: '30',
+        avatar: 'avatar3.png'
+    },
+    {
+        name: 'Christopher',
+        gender: 'M',
+        hobby: 'sports',
+        age: '26',
+        avatar: 'avatar4.png'
+    },
+    {
+        name: 'Ximena',
+        gender: 'F',
+        hobby: 'reading',
+        age: '29',
+        avatar: 'avatar5.png'
+    },
+    {
+        name: 'Paul',
+        gender: 'M',
+        hobby: 'shopping',
+        age: '34',
+        avatar: 'avatar6.png'
+    },
+    {
+        name: 'Charlie',
+        gender: 'M',
+        hobby: 'pets',
+        age: '36',
+        avatar: 'avatar7.png'
+    },
+];
+
+window.addEventListener("load", function() {
+ 
+    var results = document.getElementById("results");
+ 
+    function search() {
+        // get hobby
+        let hobbyField = document.getElementById("hobby");
+        let hobby = hobbyField.value;
+        // console.log(hobby);
+ 
+        // get gender
+        let genderField = document.getElementById("gender");
+        let gend = genderField.selectedIndex;
+        let gender = genderField.options[gend].value;
+ 
+        // get location
+        let locationField = document.getElementById("location");
+        let loc = locationField.selectedIndex;
+
+        
+        // get age range
+        let minAge = document.getElementById("min-age");
+        let maxAge = document.getElementById("max-age");
+ 
+        let min = minAge.value;
+        let max = maxAge.value;
+        // console.log(minAge.value, maxAge.value);
+ 
+        // console.log(location);
+ 
+        let resultsHTML = '';
+        var size = users.length;
+ 
+        for (let i=0; i<size; i++) {
+            if (gender === 'A' || gender === users[i].gender) {
+                    if (hobby === '' || hobby === users[i].hobby) {
+                        if (min === '' || max === '' || (min <= users[i].age && max >= users[i].age)){
+                            resultsHTML += '<div class="person-row">\
+                            <img src="images/' + users[i].avatar + '" />\
+                            <div class="person-info">\
+                            <div>' + users[i].name + '</div>\
+                            <div>' + users[i].hobby + '</div>\
+                            <div>' + users[i].age + '</div></div>\
+                            <button>Add as friend</button></div>';
+                        }
+                    }
+                
+            }
+        }
+ 
+        results.innerHTML = resultsHTML;
+    }
+ 
+    var searchBtn = document.getElementById("searchBtn");
+    searchBtn.addEventListener("click", search);
+}); -->
