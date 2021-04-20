@@ -89,7 +89,7 @@ window.addEventListener('load', function () {
                         <div>' + users[i].name + '</div>\
                         <div>' + users[i].hobby + '</div>\
                         <div>' + users[i].age + '</div></div>\
-                        <button>Add as friend</button></div>';
+                        <button>Add friend</button></div>';
                     }
 
                 }

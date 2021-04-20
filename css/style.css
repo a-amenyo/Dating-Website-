@@ -28,24 +28,82 @@ h1 {
 
 #main{
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
 }
 
+.cover-photo{
+    height: 50vh;
+    margin: 0px;
+    height: 70vh;
+    background-color: rgba(90, 119, 180, 0.1);
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -190px;
+    background-image: url('../images/roses.jpg');
+}
+.card{
+    margin: auto;
+    margin-top: 100px;
+    width: 50%;
+    height: 35vh;
+    background-color: cadetblue;
+    padding: 25px;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+p{
+    text-align: center;
+    color: white;
+}
+#cardbtn{
+    padding: 10px;
+    margin: auto;
+    outline: none;
+    border-radius: 2px;
+    border: none; 
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 1px solid cadetblue;
+    width: 200px;
+    margin-right: 10px;
+    font-size: 15px;
 
+}
+.cardbtns{
+    text-align: center;
+    /* border: 1px solid white; */
+    margin-top :50px;
+    padding: 10px;
+}
 .row {
+    text-align: center;
     display: grid;
     grid-column: 1/3;
-    margin: 10px 20px;
+    padding: 10px;
+    margin: auto;
+    width: 400px;
 }
 
 #results {
-    margin: 30px 20px 10px 0px;
+    /* border: 3px solid cadetblue; */
+    padding: 20px;
+   display: grid;
+   width: 700px;
+   margin: auto;
+   margin-bottom: 10px;
+   grid-column: 1/3;
+   
 }
 
 .person-row {
     margin: 10px 0px;
     padding: 10px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     width: 100%;
     float: left;
 }
@@ -63,35 +121,32 @@ h1 {
    float: right; 
 }
 button{
-    background-color: rgb(61, 122, 235);
+    /* background-color: rgb(61, 122, 235); */
     padding: 10px;
     margin: auto;
     outline: none;
-    border-radius: 5px;
+    border-radius: 2px;
     border: none; 
     cursor: pointer;
+    color: black;
+    width: 100px;
+    background-color: white;
+    border: 1px solid cadetblue;
     
 }
-button:hover{
-    color: black;
-    background-color: white;
-    transition-duration: 0.3s;
-    border: 1px solid cadetblue;
-}
+
 label{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .cover-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* border: 1px solid red; */
     column-gap: 0px;
     place-content: center;
     height: 50vh;
     width: 80%;
     margin-left: 260px;
     margin-top: 20px;
-    /* background-color:whitesmoke; */
 }
 
 
@@ -108,7 +163,6 @@ label{
 }
 
 .text{
- 
     color: white;
     background-color: cadetblue;
     width: auto;
@@ -140,6 +194,8 @@ label{
     height: 2px;
     border: none;
     background-color: cadetblue;
+    width: 200px;
+    margin: auto;
   }
   footer {
       background-color: whitesmoke;
