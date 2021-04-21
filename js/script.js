@@ -4,49 +4,49 @@ var users = [
         gender: 'F',
         hobby: 'pets',
         age: 20,
-        avatar: 'avatar1.png'
+        avatar: 'lucy.jpg'
     },
     {
         name: 'Betty',
         gender: 'F',
         hobby: 'pets',
         age: 30,
-        avatar: 'avatar2.png'
+        avatar: 'betty.png'
     },
     {
         name: 'Ronald',
         gender: 'M',
         hobby: 'music',
         age: 40,
-        avatar: 'avatar3.png'
+        avatar: 'ronald.jpg'
     },
     {
         name: 'Christopher',
         gender: 'M',
         hobby: 'sports',
         age: 26,
-        avatar: 'avatar4.png'
+        avatar: 'chris.png'
     },
     {
         name: 'Ximena',
         gender: 'F',
         hobby: 'reading',
         age: 27,
-        avatar: 'avatar5.png'
+        avatar: 'xiema.jpg'
     },
     {
         name: 'Paul',
         gender: 'M',
         hobby: 'shopping',
         age: 29,
-        avatar: 'avatar6.png'
+        avatar: 'paull.jpg'
     },
     {
-        name: 'Charlie',
-        gender: 'M',
+        name: 'Charlize',
+        gender: 'F',
         hobby: 'pets',
         age: 39,
-        avatar: 'avatar7.png'
+        avatar: 'charlize.png'
     },
 ];
 
